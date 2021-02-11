@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- container=wrapper -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min: 100vh;
+        }
+        .wrapper .wrap{
+            position: relative;
+            width: 350px;
+            padding: 40px;
+            background: #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,.1);
+            border-radius: 4px;
+            margin: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        .wrapper .wrap .icon {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            color: #fff;
+            background: #000;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            border-radius: 50%;
+            font-size: 40px;
+            font-weight: 700;
+            transition: 1s;
+        }
+        .wrapper .wrap:nth-child(1) .icon {
+            box-shadow: 0 0 0 0 mediumvioletred;
+            background: mediumvioletred;
+        }
+        .wrapper .wrap:nth-child(1):hover .icon {
+            box-shadow: 0 0 0 400px mediumvioletred;
+        }
+        .wrapper .wrap:nth-child(2) .icon {
+            box-shadow: 0 0 0 0 teal;
+            background: teal;
+        }
+        .wrapper .wrap:nth-child(2):hover .icon {
+            box-shadow: 0 0 0 400px teal;
+        }
+
+        .wrapper .wrap:nth-child(3) .icon {
+            box-shadow: 0 0 0 0 lightsalmon;
+            background: lightsalmon;
+        }
+        .wrapper .wrap:nth-child(2):hover .icon {
+            box-shadow: 0 0 0 400px lightsalmon;
+        }
+        .wrapper .wrap .cont {
+            position: relative;
+            z-index: 1;
+            transition: 0.5s;
+        }
+        .wrapper .wrap:hover .cont {
+            color: #fff;
+        }
+        .wrapper .wrap .cont h3 {
+            font-size: 20px;
+            margin: 10px 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="wrap">
+            <div class="icon">A</div>
+            <div class="cont">
+                <h3>
+                    Marion Biotech Pvt. Ltd.
+                    <br>
+                    B-48, Sector 67
+                    <br>
+                    Gautam Budh Nagar
+                    <br>
+                    Noida-201301 (U.P), India,
+                </h3>
+            </div>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="icon">E</div>
+        <div class="cont">
+            <h3>
+                <br>
+                <br>
+                <br>
+                <h3>info@marionbiotech.com</h3>
+            </h3>
+        </div>
+    </div>
+    <div class="wrap">
+        <div class="icon">P</div>
+        <div class="cont">
+            <h3>
+                <br>
+                <br>
+                <br>
+                <h3>0120-2484621/22/23</h3>
+            </h3>
+        </div>
+    </div>
+</body>
+</html>
